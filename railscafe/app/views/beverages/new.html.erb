@@ -1,0 +1,17 @@
+<h1>Add a Beverage!</h1>
+
+<%= form_for @beverage do |f| %>
+	Type: <%=f.text_field :bev_type %>
+	Price: <%=f.text_field :price %>
+	Quantity: <%=f.text_field :quantity %>
+	Roast: <%=f.text_field :roast %>
+	Brew: <%=f.text_field :brew %>
+	Expiration Date: <%=f.date_field :expiration_date %>
+
+	<%= f.submit "Add this Beverage!" %>
+
+<% end %>	
+	<!-- Specify the data type on the f. -->
+
+<!-- the form_for is a helper method that rails gives you
+forms you add an equal sign -->

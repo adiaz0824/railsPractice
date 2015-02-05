@@ -1,0 +1,28 @@
+<h1>Beverage List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Roast</th>
+      <th>Expiration</th>
+      <th>Brew</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @beverages.each do |beverage| %>
+      <tr>
+        <td><%= beverage.bev_type %></td>
+        <td><%= beverage.price %></td>
+        <td><%= beverage.quantity %></td>
+        <td><%= beverage.roast %></td>
+        <td><%= beverage.expiration_date %></td>
+        <td><%= beverage.brew %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
